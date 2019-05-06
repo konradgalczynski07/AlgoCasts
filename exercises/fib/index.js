@@ -33,7 +33,7 @@ function fibIterative(n) {
   return result[n];
 }
 
-function fib(n) {
+function slowFib(n) {
    if (n < 2) {
      return n;
    }
@@ -55,4 +55,4 @@ function memoize(fn) {
   }
 }
 
-fib = memoize(fib)
+const fib = memoize(slowFib)
